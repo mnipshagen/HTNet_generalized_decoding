@@ -16,7 +16,7 @@ from tensorflow.keras import backend as K
 import tensorflow as tf
 
 # Load utility functions for custom HTNet layers
-from model_utils import apply_hilbert_tf, proj_to_roi
+from .model_utils import apply_hilbert_tf, proj_to_roi
 
 def htnet(nb_classes, Chans = 64, Samples = 128, 
           dropoutRate = 0.5, kernLength = 64, F1 = 8, 
